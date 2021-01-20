@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "gateway.accesslog.enabled",
+      "defaultValue": "true",
+      "type": "java.lang.Boolean",
+      "description": "Gateway Access Log active flag."
+    },
+    {
+      "name": "gateway.accesslog.timeZone",
+      "defaultValue": "UTC",
+      "type": "java.lang.String",
+      "description": "Gateway Access log timeZone."
+    }
+  ]
+}
