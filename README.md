@@ -22,10 +22,28 @@ For example, if you want to leave session information for a user or client in al
 ### Example
 - Implement the AccessUserInformationResolver interface and register it as a Spring Bean.
 ```java
+package com.tistory.johnmark.springgateway;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.github.loveandcode.accesslog.AccessUserInformationResolver;
+
+@SpringBootApplication
+public class SpringGatewayApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringGatewayApplication.class, args);
+	}
+
 	@Bean
 	public AccessUserInformationResolver accessUserInformationResolver() {
 		return serverWebExchange -> "ANONYMOUS";
 	}
+}
+
+
 ```
 
 - Example Log Image
