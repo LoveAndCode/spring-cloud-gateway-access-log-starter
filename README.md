@@ -7,6 +7,14 @@ Simple Spring Cloud Gateway Access Log starter
 ./gradlew clean build -x test
 ```
 
+### Porperty
+```yaml
+gateway:
+  accesslog:
+    enabled: true # enable or disable logging, default value is true.
+    timeZone: Asia/Seoul # log datetime zone setting, default is UTC
+```
+
 
 ### Custom Access User Information Resolver
 
@@ -48,3 +56,9 @@ public class SpringGatewayApplication {
 
 - Example Log Image
 ![gatewayAccessLogExample](./image.png)
+
+
+### Future Plan
+- [ ] Maven repository Support
+- [ ] Request Response Log Filter
+- [ ] Sensitive data masking processing option
