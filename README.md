@@ -7,7 +7,7 @@ Simple Spring Cloud Gateway Access Log starter
 ./gradlew clean build -x test
 ```
 
-### Porperty
+### Property
 ```yaml
 gateway:
   accesslog:
